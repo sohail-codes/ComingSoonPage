@@ -9,7 +9,7 @@ function App() {
       <div id="flipdown" className="flipdown"></div>
         <img src={logo} className="App-logo" alt="logo" />
         <p className="Launch">
-          Launching Soon ....
+          Launching Soon .....
         </p>
       </header>
     </div>
