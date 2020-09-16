@@ -5,20 +5,18 @@ class product extends Component {
         super(props);
     }
     render() {
-        const utmsource = "shareapp";
-        const utmmedium = "referral";
-        const utmterm = this.props.match.params.id;
+        const referrer = "shareproduct";
+        const code = this.props.match.params.id;
         const query = new URLSearchParams(this.props.location.search);
-        const utmcontent = query.get('ref');
+        const id = query.get('ref');
         const prefix = "https://play.google.com/store/apps/details?id=com.shopsath.com&referrer=";
-        const url  = prefix+"utm_source%3D"+utmsource+"%26utm_medium%3D"+utmmedium+"%26utm_term%3D"+utmterm+"%26utm_content%3D"+utmcontent;
+        const url  = prefix+referrer+"&id="+id+"&code="+code;
         return (
             
             <div>
-                <p>utm_source = {utmsource}</p>
-                <p>utm_medium = {utmmedium}</p>
-                <p>utm_term = {utmterm}</p>
-                <p>utm_content = {utmcontent}</p>
+                <p>referrer = {referrer}</p>
+                <p>id = {id}</p>
+                <p>code = {code}</p>
                 <p>playstorelink = {url}</p>
             </div>
         )
