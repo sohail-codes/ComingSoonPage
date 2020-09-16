@@ -1,39 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .App {
-  text-align: center;
-  
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #2A2A72 0%, #348CBF 100%);  
+  height: 100vh;
+  width: 100vw;
 }
 
 .App-logo {
-  height: 50vmin;
+  height: 50%;
   pointer-events: none;
 }
+.logoholder{
+  min-width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-
+.headname{
+  color: white;
+  padding-left: 5px;
+  font-weight: 600;
+  font-family: 'Roboto';
+  letter-spacing: 0.3rem;
+  vertical-align: bottom;
+  line-height: 6vh;
+}
+.headnameholder{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+ 
+}
 .App-header {
-  background-color: #8BC6EC;
-  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);  
-  min-height: 100vh;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 2.2vh;
+}
+.contentArea{
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content{
+  height: 90%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  font-size: calc(10px + 2vmin);
+}
+.welcome{
   color: white;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 3vh;
 }
-.Launch{
-  font-size: larger;
-  font-weight: 600;
-  color: black;
+.playbadge{
+  width: 70%;
 }
-.App-link {
-  color: #61dafb;
+.badgeholder{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 480px) {
+  .welcome {
+    font-size: 5vh;
   }
-  to {
-    transform: rotate(360deg);
+  .playbadge{
+    width: 30%;
   }
 }

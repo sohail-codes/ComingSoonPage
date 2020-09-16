@@ -1,19 +1,30 @@
-import React from 'react';
-import logo from './logo.png';
-import './App.css';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Home from './screens/home';
+import Appref from './screens/appref';
+import Product from './screens/product';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <div id="flipdown" className="flipdown"></div>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className="Launch">
-          Launching Soon .....
-        </p>
-      </header>
-    </div>
+    <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/app/:id">
+            <Appref />
+          </Route>
+          <Route path="/product/:id">
+            <Product />
+          </Route>
+          <Route>
+            <Home/>
+          </Route>
+        </Switch>
+    </Router>
   );
 }
-
-export default App;
