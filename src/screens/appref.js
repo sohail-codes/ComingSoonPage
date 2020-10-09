@@ -7,7 +7,7 @@ class appref extends Component {
     render() {
         const referrer = "shareapp";
         const code = this.props.match.params.id;
-        const prefix = "https://play.google.com/store/apps/details?id=com.contexdo.shopsath&referrer=";
+        const prefix = "https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.contexdo.shopsath&referrer=";
         const url  = prefix+referrer+"&code="+code;
         window.location.replace(url);
         return null;
