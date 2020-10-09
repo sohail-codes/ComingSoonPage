@@ -23,7 +23,9 @@ export default class home extends Component {
                             Welcome To ShopSath!
                         </p>
                         <div className={"badgeholder"}>
-                            <img src={google} className={'playbadge'} alt="playstore"/>
+                            <a href="https://play.google.com/store/apps/details?id=com.contexdo.shopsath">
+                            <img  src={google} className={'playbadge'} alt="playstore"/>
+                            </a>
                         </div>
                     </div>
                 </div>
