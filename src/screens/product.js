@@ -9,17 +9,10 @@ class product extends Component {
         const sku = this.props.match.params.id;
         const query = new URLSearchParams(this.props.location.search);
         const code = query.get('ref');
-        const prefix = "https://play.google.com/store/apps/details?id=com.shopsath.com&referrer=";
+        const prefix = "https://play.google.com/store/apps/details?id=com.contexdo.shopsath&referrer=";
         const url  = prefix+referrer+"&sku="+sku+"&code="+code;
-        return (
-            
-            <div>
-                <p>referrer = {referrer}</p>
-                <p>sku = {sku}</p>
-                <p>code = {code}</p>
-                <p>playstorelink = {url}</p>
-            </div>
-        )
+        window.location.replace(url);
+        return null
     }
 }
 export default withRouter(product);
