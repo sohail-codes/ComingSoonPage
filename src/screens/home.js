@@ -22,11 +22,9 @@ export default class home extends Component {
                         <p className={"welcome"}>
                             Welcome To ShopSath!
                         </p>
-                        <div className={"badgeholder"}>
-                            <a href="https://play.google.com/store/apps/details?id=com.contexdo.shopsath">
+                        <a className={"badgeholder"} href="https://play.google.com/store/apps/details?id=com.contexdo.shopsath">
                             <img  src={google} className={'playbadge'} alt="playstore"/>
-                            </a>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
