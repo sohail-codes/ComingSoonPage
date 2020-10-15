@@ -1,87 +1,147 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-.App {
-  background-color: #8BC6EC;
+body, html {
   background-image: linear-gradient(135deg, #2A2A72 0%, #348CBF 100%);  
-  height: 100vh;
-  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
 }
-
-.App-logo {
-  height: 50%;
-  pointer-events: none;
-}
-.logoholder{
-  min-width: 45%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.headname{
-  color: white;
-  padding-left: 5px;
-  font-weight: 600;
-  font-family: 'Roboto';
-  letter-spacing: 0.3rem;
-  vertical-align: bottom;
-  line-height: 6vh;
-}
-.headnameholder{
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
- 
-}
-.App-header {
-  height: 10%;
+.header {
   width: 100%;
+  height: 12vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  font-size: 2.2vh;
-}
-.contentArea{
-  height: 90%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .content{
-  height: 90%;
-  width: 90%;
+  min-height: 80vh;
+  width: 100%;
+}
+.footer{
+  height: 8%;
+  width: 100%;
+  min-height: 20vh;
+  background-color: #182234;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footercolumn {
+  height: 80%;
+  width: 40%;
+}
+.footercolumn2 {
+  height: 80%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.clickable{
+  margin-left: 10px;
+}
+.footerentry{
+  color: antiquewhite;
+  font-size: smaller;
+  margin-top: 5px;
+}
+.footeranchor{
+  color: azure;
+}
+.mainArea{
+  height: 100%;
+  width: 100%;
+  min-height: 76vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
 }
-.welcome{
-  color: white;
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 3vh;
-}
-.playbadge{
-  width: 70%;
-}
-.badgeholder{
-  width: 100%;
-  height: 70%;
+.phoneArea {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+.phone{
+  height: 66vh;
+  width: 33vh;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 9px;
+  border-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: whitesmoke;
+
+}
+.headrow{
+  min-height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headtext{
+  width: 65%;
+  color: azure;
+}
+.feature {
+  margin-top: 8%;
+  color: azure;
+  font-weight: 700;
+  font-size: x-large;
+}
+@media screen and (max-width: 480px) {
+  .phoneArea{
+    width: 90%;
+    min-height: 70vh;
+    margin-top: 10%;
+  }
+  .textArea{
+    width: 90%;
+    min-height: 20vh;
+    margin-top: 10%;
+    padding-bottom: 10%;
+  }
+  .headtext{
+    font-size: larger;
+  }
+  .feature {
+    font-size: large;
+  }
+  .facebook {
+    max-height: 40px;
+  }
+  .clickable {
+    margin-left: 5px;
+  }
+  .insta {
+    max-height: 38px;
+  }
+  .sharechat {
+    max-height: 32px;
+  }
 }
 @media screen and (min-width: 480px) {
-  .welcome {
-    font-size: 5vh;
+  .header{
+    justify-content: flex-start;
   }
-  .playbadge{
-    width: 30%;
+  .logo{
+    margin-left: 5%;
+  }
+  .footer{
+    height: 15%;
+  }
+  .mainArea{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .phoneArea{
+    min-height: 68vh;
+    width: 50%;
+  }
+  .textArea{
+    min-height: 68vh;
+    width: 50%;
+    margin-right: 5%;
   }
 }

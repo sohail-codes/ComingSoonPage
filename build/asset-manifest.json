@@ -1,24 +1,40 @@
 {
   "files": {
-    "main.css": "/static/css/main.654f5da6.chunk.css",
-    "main.js": "/static/js/main.7f957d1f.chunk.js",
-    "main.js.map": "/static/js/main.7f957d1f.chunk.js.map",
+    "main.css": "/static/css/main.7eedc3b4.chunk.css",
+    "main.js": "/static/js/main.51680c5d.chunk.js",
+    "main.js.map": "/static/js/main.51680c5d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7f062537.js",
     "runtime-main.js.map": "/static/js/runtime-main.7f062537.js.map",
-    "static/js/2.bdb0cc53.chunk.js": "/static/js/2.bdb0cc53.chunk.js",
-    "static/js/2.bdb0cc53.chunk.js.map": "/static/js/2.bdb0cc53.chunk.js.map",
+    "static/js/2.305a3046.chunk.js": "/static/js/2.305a3046.chunk.js",
+    "static/js/2.305a3046.chunk.js.map": "/static/js/2.305a3046.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e95a53e18e61f58bb6f30066422eef19.js": "/precache-manifest.e95a53e18e61f58bb6f30066422eef19.js",
+    "precache-manifest.c8eaa2b3532341250739c97a7025f872.js": "/precache-manifest.c8eaa2b3532341250739c97a7025f872.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.654f5da6.chunk.css.map": "/static/css/main.654f5da6.chunk.css.map",
-    "static/js/2.bdb0cc53.chunk.js.LICENSE.txt": "/static/js/2.bdb0cc53.chunk.js.LICENSE.txt",
+    "static/css/main.7eedc3b4.chunk.css.map": "/static/css/main.7eedc3b4.chunk.css.map",
+    "static/js/2.305a3046.chunk.js.LICENSE.txt": "/static/js/2.305a3046.chunk.js.LICENSE.txt",
+    "static/media/appsharehi.jpg": "/static/media/appsharehi.ff542360.jpg",
+    "static/media/categoryen.jpg": "/static/media/categoryen.f4849aff.jpg",
+    "static/media/categoryhi.jpg": "/static/media/categoryhi.241c018d.jpg",
+    "static/media/dealsen.jpg": "/static/media/dealsen.4ce9d7ad.jpg",
+    "static/media/dealshi.jpg": "/static/media/dealshi.fa2b04dd.jpg",
+    "static/media/feeden.jpg": "/static/media/feeden.9de52a78.jpg",
+    "static/media/feedhi.jpg": "/static/media/feedhi.00026fde.jpg",
     "static/media/google-play-badge.png": "/static/media/google-play-badge.db9b21a1.png",
-    "static/media/logo.png": "/static/media/logo.00b399c5.png"
+    "static/media/insta.png": "/static/media/insta.171f48e3.png",
+    "static/media/language.jpg": "/static/media/language.e1004653.jpg",
+    "static/media/loaderanimation1.png": "/static/media/loaderanimation1.e9c78592.png",
+    "static/media/producten.jpg": "/static/media/producten.8d6dbe2d.jpg",
+    "static/media/producthi.jpg": "/static/media/producthi.5d716aca.jpg",
+    "static/media/sharechat.png": "/static/media/sharechat.feb715e4.png",
+    "static/media/walleten.jpg": "/static/media/walleten.f3d88a7c.jpg",
+    "static/media/wallethi.jpg": "/static/media/wallethi.597738dc.jpg",
+    "static/media/welcomeen.jpg": "/static/media/welcomeen.f70ce90c.jpg",
+    "static/media/welcomehi.jpg": "/static/media/welcomehi.3a598790.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.7f062537.js",
-    "static/js/2.bdb0cc53.chunk.js",
-    "static/css/main.654f5da6.chunk.css",
-    "static/js/main.7f957d1f.chunk.js"
+    "static/js/2.305a3046.chunk.js",
+    "static/css/main.7eedc3b4.chunk.css",
+    "static/js/main.51680c5d.chunk.js"
   ]
 }

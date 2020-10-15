@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
+import  { Component } from 'react';
 import {withRouter} from 'react-router';
 class product extends Component {
-    constructor (props) {
-        super(props);
-    }
+
     render() {
         const referrer = "shareproduct";
         const sku = this.props.match.params.id;
