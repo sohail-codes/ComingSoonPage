@@ -29,7 +29,6 @@ export default class home extends Component {
     }
     handlenext()
     {
-        console.log(this.state.current);
         var length =  this.state.images.length;
         if(this.state.current < length-1)
         {
