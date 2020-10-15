@@ -5,12 +5,12 @@ class product extends Component {
         super(props);
     }
     render() {
-        const referrer = "sahreproduct";
+        const referrer = "shareproduct";
         const sku = this.props.match.params.id;
         const query = new URLSearchParams(this.props.location.search);
         const code = query.get('refer');
         const prefix = "https://play.google.com/store/apps/details?id=com.contexdo.shopsath&referrer=";
-        const url  = prefix+referrer+"&sku="+sku+"&code="+code;
+        const url  = prefix+referrer+"%26"+sku+"%26"+code;
         window.location.replace(url);
         return null
     }
