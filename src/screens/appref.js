@@ -23,7 +23,7 @@ componentDidMount()
             ReactPixel.trackCustom('apprefer', {
                 content_name : code
             });
-            window.location.replace(url);   
+            // window.location.replace(url);   
         } catch (error) {
             console.log(error);
         }
