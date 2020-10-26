@@ -10,9 +10,7 @@ const options = {
 class appref extends Component {
 componentDidMount()
 {
-    const id  =  this.props.match.params.id;
-    ReactPixel.init('361469531723659', advancedMatching, options);
-    ReactPixel.trackCustom('apprefer', id);
+   
     
 }   
     render() {
@@ -20,7 +18,15 @@ componentDidMount()
         const code = this.props.match.params.id;
         const prefix = "https://play.google.com/store/apps/details?id=com.contexdo.shopsath&referrer=";
         const url  = prefix+referrer+"%26"+code;
-        window.location.replace(url);
+        try {
+            ReactPixel.init('361469531723659', advancedMatching, options);
+            ReactPixel.trackCustom('apprefer', {
+                content_name : code
+            });
+            window.location.replace(url);   
+        } catch (error) {
+            console.log(error);
+        }
         return null;
     }
 }
