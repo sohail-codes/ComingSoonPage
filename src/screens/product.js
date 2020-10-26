@@ -16,8 +16,9 @@ class product extends Component {
         const prefix = "https://play.google.com/store/apps/details?id=com.contexdo.shopsath&referrer=";
         const url  = prefix+referrer+"%26"+sku+"%26"+code;
         ReactPixel.init('361469531723659', advancedMatching, options);
-        ReactPixel.trackCustom('productrefer', {
-            sku , code
+        ReactPixel.trackSingleCustom('361469531723659','productrefer', {
+            sku : sku,
+            code : code
         });
         window.location.replace(url);
         return null
