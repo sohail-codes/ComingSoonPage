@@ -14,7 +14,7 @@ class appref extends Component {
         const prefix = "https://play.google.com/store/apps/details?id=com.contexdo.shopsath&referrer=";
         const url = prefix + referrer + "%26" + code;
         ReactPixel.init('361469531723659', advancedMatching, options);
-        ReactPixel.trackCustom('apprefer', {
+        ReactPixel.trackSingleCustom('361469531723659','apprefer', {
             refercode : code
         });
         window.location.replace(url);
