@@ -1,7 +1,20 @@
 import { Component } from 'react';
 import {withRouter} from 'react-router';
+import ReactPixel from 'react-facebook-pixel';
+const advancedMatching = { }; // optional, more info: https://developers.facebook.com/docs/facebook-pixel/advanced/advanced-matching
+const options = {
+  autoConfig: true, // set pixel's autoConfig
+  debug: false, // enable logs
+};
+
 class appref extends Component {
-   
+componentDidMount()
+{
+    const id  =  this.props.match.params.id;
+    ReactPixel.init('361469531723659', advancedMatching, options);
+    ReactPixel.trackCustom('apprefer', data);
+    
+}   
     render() {
         const referrer = "shareapp";
         const code = this.props.match.params.id;
