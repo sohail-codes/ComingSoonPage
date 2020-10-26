@@ -7,12 +7,7 @@ const options = {
   debug: false, // enable logs
 };
 
-class appref extends Component {
-componentDidMount()
-{
-   
-    
-}   
+class appref extends Component {  
     render() {
         const referrer = "shareapp";
         const code = this.props.match.params.id;
@@ -23,7 +18,7 @@ componentDidMount()
             ReactPixel.trackCustom('apprefer', {
                 content_name : code
             });
-            // window.location.replace(url);   
+            window.location.replace(url);   
         } catch (error) {
             console.log(error);
         }
