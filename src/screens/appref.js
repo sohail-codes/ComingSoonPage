@@ -12,7 +12,7 @@ componentDidMount()
 {
     const id  =  this.props.match.params.id;
     ReactPixel.init('361469531723659', advancedMatching, options);
-    ReactPixel.trackCustom('apprefer', data);
+    ReactPixel.trackCustom('apprefer', id);
     
 }   
     render() {
