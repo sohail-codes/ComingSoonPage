@@ -17,8 +17,8 @@ class product extends Component {
         const url  = prefix+referrer+"%26"+sku+"%26"+code;
         ReactPixel.init('361469531723659', advancedMatching, options);
         ReactPixel.trackSingleCustom('361469531723659','productrefer', {
-            sku : sku,
-            code : code
+            content_name : sku,
+            content_ids : [code]
         });
         window.location.replace(url);
         return null
