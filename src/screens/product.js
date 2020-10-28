@@ -18,7 +18,7 @@ class product extends Component {
         ReactPixel.init('361469531723659', advancedMatching, options);
         ReactPixel.trackSingleCustom('361469531723659','productrefer', {
             content_name : sku,
-            content_ids : [code]
+            content_id : code
         });
         window.location.replace(url);
         return null
