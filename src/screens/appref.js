@@ -15,7 +15,7 @@ class appref extends Component {
         const url = prefix + referrer + "%26" + code;
         ReactPixel.init('361469531723659', advancedMatching, options);
         ReactPixel.trackSingleCustom('361469531723659','apprefer', {
-            content_name : code
+            refer : code
         });
         window.location.replace(url);
         return null;
